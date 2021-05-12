@@ -7,4 +7,4 @@ I used the following scatter plots to visualize the data:
  - Cloudiness (%) vs. Latitude
  - Wind Speed (mph) vs. Latitude
 
-https://github.com/bay0624/python-api-challenge/Weatherpy/to/Plots.jpg
+https://github.com/bay0624/python-api-challenge/Weatherpy/Plots.jpg
