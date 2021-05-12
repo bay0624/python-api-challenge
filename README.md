@@ -7,7 +7,7 @@ I used the following scatter plots to visualize the data:
  - Cloudiness (%) vs. Latitude
  - Wind Speed (mph) vs. Latitude
 ![Plots_img](https://user-images.githubusercontent.com/53978733/117922206-1de5da80-b2c0-11eb-8a4a-4e7d50d3638f.jpg)
-I also ran linear regression on each relationship above by creating 8 additional plots. I separated the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude). The following are the plots are created (and also calculated the r-value of eac):
+I also ran linear regression on each relationship above by creating 8 additional plots. I separated the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude). The following are the plots are created (and also calculated the r-value of each):
  - Northern Hemisphere - Temperature (F) vs. Latitude
  - Southern Hemisphere - Temperature (F) vs. Latitude
  - Northern Hemisphere - Humidity (%) vs. Latitude
