@@ -140,4 +140,27 @@ plt.show()
 
 # Vacation API
 I used the data i gathered above, as well as jupyter-gmaps and the Google Places API to plan likely vacation spots. I was able to narrow down the data frame to only show cities with perfect weather conditions: A max temperature lower than 80 degrees but higher than 70; Wind speed less than 10 mph; and Zero cloudiness.
+
+### Creating Humidity HeatMap
+```python 
+gmaps.configure(g_key)
+locations = cities_weather_df[["Lat", "Lng"]]
+humidity = cities_weather_df["Humidity"].astype(float)
+max_humidity = max(humidity)
+fig = gmaps.figure()
+heat_layer = gmaps.heatmap_layer(locations, weights=humidity, 
+                                 dissipating=False, max_intensity=max_humidity, 
+                                 point_radius=3.5)
+fig.add_layer(heat_layer)
+fig 
+```
+
+### Creating new DataFrame fitting weather criteria (Perfect temperature between 70 and 80 Degrees, WindSpeed less tha 10mph and Zero Cloudiness
+```python
+perfect_conditions = cities_weather_df[(cities_weather_df["Max Temp"] >70) 
+                                       & (cities_weather_df["Max Temp"] < 80) 
+                                       & (cities_weather_df["Wind Speed"] < 10) 
+                                       & (cities_weather_df["Cloudiness"] == 0)]
+```
+
 <img width="977" alt="hotel_map_info" src="https://github.com/bay0624/python-api-challenge/blob/main/VacationPy/hotel_map_info.png">
