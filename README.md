@@ -81,7 +81,7 @@ print("Data Retrieval Complete")
 print("-----------------------")
 ```
 
-I used the following scatter plots to visualize the data:
+### I used the following scatter plots to visualize the data:
  - Temperature (F) vs. Latitude
  - Humidity (%) vs. Latitude
  - Cloudiness (%) vs. Latitude
